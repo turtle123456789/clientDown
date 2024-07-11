@@ -22,7 +22,7 @@ const HomPage = () =>{
         setSelectedFile(event.target.files[0]);
     };
     const handDown = async(e)=>{
-        const data = await downFile(nameFile)
+        await downFile(nameFile)
         toast.success("Tải xuống thành công")
         handleClose()
     }
@@ -71,7 +71,7 @@ const HomPage = () =>{
           theme="colored"
 
         />
-        <input type="file" onChange={handleFileChange} required/>
+         <input type="file" onChange={handleFileChange} />
          <button onClick={handleUpload}>Tải file lên</button>
         <h1 style={{textAlign:'center'}}>Danh sách link</h1>
         <div className="homePage"  style={{display:"flex"}}>
