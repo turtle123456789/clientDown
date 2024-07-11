@@ -1,0 +1,9 @@
+
+.App li{
+  color: blue;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.App li:hover{
+  text-decoration: underline;
+}
